@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background: black;
+  color: white;
+}
+
+h3, h4 {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.job {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.box1 {
+  grid-area: os;
+}
+
+.box2 {
+  grid-area: ah;
+}
+
+.box3 {
+  grid-area: sh;
+}
+
+.box4 {
+  grid-area: mo;
+}
+
+.box5 {
+  grid-area: ma;
+}
+
+.box6 {
+  grid-area: ez;
+}
+
+.box7 {
+  grid-area: sa;
+}
+
+.box8 {
+  grid-area: sa2;
+}
+
+.box9 {
+  grid-area: sa3;
+}
+
+.box10 {
+  grid-area: sa4;
+}
+
+.container {
+  background-color: #ddd;
+  min-height: 100%;
+  padding: 20px 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: 345px 395px 395px 280px;
+  grid-template-areas: 'os os ah sh' 'mo ma ma sh' 'mo ez ez sh' 'sa sa2 sa3 sa4';
+  grid-gap: 10px;
+}
+
+.container div {
+  border-bottom: 4px solid orangered;
+  padding: 14px 20px;
+  position: relative;
+}
+
+.container div .bold {
+  padding: 15px 0;
+}
+
+.container div span {
+  position: absolute;
+  font-size: 60px;
+  bottom: -45px;
+  right: 15px;
+  transform: rotate(15deg);
+  color: #999;
+}
+/*# sourceMappingURL=main.css.map */
